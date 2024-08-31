@@ -5,7 +5,7 @@ const bodyParser=require("body-parser"); //used for form submission
 
 const mongoose=require('mongoose');
 
-(async () => {await mongoose.connect('mongodb+srv://admin:admin@cluster.dxkcct4.mongodb.net/testing?retryWrites=true&w=majority&appName=cluster');})();
+(async () => {await mongoose.connect('');})();
 
 const UserSchema = new mongoose.Schema({
     username : String ,
@@ -13,9 +13,6 @@ const UserSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', UserSchema);
-
-
-
 
 
 
